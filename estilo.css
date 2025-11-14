@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --spotify-green: #1DB954;
+  --spotify-dark: #121212;
+  --spotify-gray: #282828;
+  --spotify-light: #b3b3b3;
+  --error-red: #E91429;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('spotify.jpg');  /* 🔹 Coloca tu imagen aquí */
+  background-size: cover;              /* Ajusta a toda la pantalla */
+  background-position: center;         /* Centra la imagen */
+  background-repeat: no-repeat;
+  color: rgb(185, 12, 12);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: brightness(0.6); /* opcional: oscurece un poco el fondo */
+}
+
+
+header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+header h1 {
+  color: var(--spotify-green);
+  margin-bottom: 5px;
+}
+
+header p {
+  color: var(--spotify-light);
+  font-size: 0.9rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--spotify-gray);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(40, 138, 74, 0.719);
+  width: 90%;
+  max-width: 800px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+  color: var(--spotify-green);
+  margin-bottom: 15px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: #000000;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: var(--spotify-green);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--spotify-light);
+  margin-bottom: 20px;
+}
+
+.card {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+  
+}
